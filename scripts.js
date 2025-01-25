@@ -4,6 +4,8 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
+console.log("teste")
+
 const requiredInputs = [
   document.getElementById("date"),
   document.getElementById("primeiroPonto"),
@@ -228,7 +230,7 @@ function generatePDF() {
       }
 
       pdf.save(
-        `LOJA TESTE-CHECAGEM DE TEMPERATURA-${requiredInputs[0].value}.pdf`
+        `LOJA teste-CHECAGEM DE TEMPERATURA-${requiredInputs[0].value}.pdf`
       );
     })
     .then(() => {
