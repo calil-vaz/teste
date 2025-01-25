@@ -4,12 +4,6 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-// const savedProfile = localStorage.getItem("savedProfile");
-// const valores = JSON.parse(savedProfile);
-
-// console.log(valores);
-
-
 const requiredInputs = [
   document.getElementById("date"),
   document.getElementById("primeiroPonto"),
