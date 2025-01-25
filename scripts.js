@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 4)
+console.log("teste 4")
 
 const requiredInputs = [
   document.getElementById("date"),
