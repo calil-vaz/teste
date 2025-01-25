@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 3")
+console.log("teste 4)
 
 const requiredInputs = [
   document.getElementById("date"),
@@ -87,6 +87,13 @@ function generatePDF() {
     }).showToast();
     return;
   }
+
+  let valorPontoUm = document.createElement("div");
+
+  valorPontoUm.innerHTML = `
+     ____
+  `
+  valorPontoUm.style.color = "white"
   
   content.innerHTML = `
             
@@ -183,6 +190,8 @@ function generatePDF() {
               <p style="margin: 0;">4° FRENTE DE CAIXA ${requiredInputs[4].value.toUpperCase()}°C</p>
             </div>                   
   `;
+
+  content.append(valorPontoUm);
 
   document.getElementById("content").style.display = "block";
   const element = document.getElementById("content");
