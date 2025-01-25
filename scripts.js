@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 4")
+console.log("teste 5")
 
 const requiredInputs = [
   document.getElementById("date"),
@@ -91,9 +91,12 @@ function generatePDF() {
   let valorPontoUm = document.createElement("div");
 
   valorPontoUm.innerHTML = `
-     ____
+     <div style="margin-left: 26rem; margin: 0; border: none" class="cardTemperatura">
+              _________
+              _________
+            </div>  
   `
-  valorPontoUm.style.color = "white"
+  // valorPontoUm.style.color = "white"
   
   content.innerHTML = `
             
@@ -199,7 +202,7 @@ function generatePDF() {
 
   html2pdf()
     .set({
-      margin: [25, 0, 25, 0], 
+      margin: [25, 0, 15, 0], 
       html2canvas: { scale: 2 },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       pagebreak: { mode: ["css", "legacy"] },
