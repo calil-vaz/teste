@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 2")
+console.log("teste 3")
 
 const requiredInputs = [
   document.getElementById("date"),
@@ -87,12 +87,6 @@ function generatePDF() {
     }).showToast();
     return;
   }
-
-  let valorPontoUm = document.createElement("div");
-
-  // valorPontoUm.innerHTML = `
-  //     ____
-  // `
   
   content.innerHTML = `
             
@@ -173,24 +167,22 @@ function generatePDF() {
                     </tr>
                     </thead>
             </table>           
-            <div style="margin-left: 26rem; margin-top: 5rem;" class="cardTemperatura">
+            <div style="margin-left: 26rem; margin-top: 3rem;" class="cardTemperatura">
               <p style="margin: 0;">1° SAÍDA DO DEPÓSITO - PAREDÃO ${requiredInputs[1].value.toUpperCase()}°C</p>
             </div>                   
             <div style="margin-left: 35rem; margin-top: 10.5rem;" class="cardTemperatura">
               <p style="margin: 0;">2° BEBIDAS ${requiredInputs[2].value.toUpperCase()}°C</p>
             </div>                   
-            <div style="margin-left: 16.5rem; margin-top: -2rem;" class="cardTemperatura">
+            <div style="margin-left: 16.5rem; margin-top: -4rem;" class="cardTemperatura">
               <p style="margin: 0;">3° CENTRO <br> DA LOJA ${requiredInputs[3].value.toUpperCase()}°C</p>
             </div>                   
-            <div style="margin-left: 3rem; margin-top: -7rem;" class="cardTemperatura">
+            <div style="margin-left: 3rem; margin-top: -10rem;" class="cardTemperatura">
               <p style="margin: 0;">5° FLV E PERECÍVEIS ${requiredInputs[5].value.toUpperCase()}°C</p>
             </div>                   
-            <div style="margin-left: 15rem; margin-top: 15rem;" class="cardTemperatura">
+            <div style="margin-left: 15rem; margin-top: 12rem;" class="cardTemperatura">
               <p style="margin: 0;">4° FRENTE DE CAIXA ${requiredInputs[4].value.toUpperCase()}°C</p>
             </div>                   
   `;
-
-  // content.append(valorPontoUm);
 
   document.getElementById("content").style.display = "block";
   const element = document.getElementById("content");
@@ -198,7 +190,7 @@ function generatePDF() {
 
   html2pdf()
     .set({
-      margin: [35, 0, 25, 0], 
+      margin: [25, 0, 25, 0], 
       html2canvas: { scale: 2 },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       pagebreak: { mode: ["css", "legacy"] },
