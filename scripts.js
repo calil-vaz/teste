@@ -205,7 +205,7 @@ function generatePDF() {
     .toPdf()
     .get("pdf")
     .then((pdf) =>
-    pdf.addImage("/teste/Images/setas-temperatura.png", "PNG", 44, 150, 120, 120))
+    pdf.addImage("./Images/setas-temperatura.png", "PNG", 44, 150, 120, 120))
     .then((pdf) => {
       const pageCount = pdf.internal.getNumberOfPages();
 
