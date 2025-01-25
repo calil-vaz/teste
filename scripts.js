@@ -228,7 +228,7 @@ function generatePDF() {
       }
 
       pdf.save(
-        `LOJA ${valores[1]}-CHECAGEM DE TEMPERATURA-${requiredInputs[0].value}.pdf`
+        `LOJA TESTE-CHECAGEM DE TEMPERATURA-${requiredInputs[0].value}.pdf`
       );
     })
     .then(() => {
