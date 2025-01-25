@@ -4,10 +4,10 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-const savedProfile = localStorage.getItem("savedProfile");
-const valores = JSON.parse(savedProfile);
+// const savedProfile = localStorage.getItem("savedProfile");
+// const valores = JSON.parse(savedProfile);
 
-console.log(valores);
+// console.log(valores);
 
 
 const requiredInputs = [
@@ -211,7 +211,7 @@ function generatePDF() {
     .toPdf()
     .get("pdf")
     .then((pdf) =>
-    pdf.addImage("../Images/setas-temperatura.png", "PNG", 44, 150, 120, 120))
+    pdf.addImage("./Images/setas-temperatura.png", "PNG", 44, 150, 120, 120))
     .then((pdf) => {
       const pageCount = pdf.internal.getNumberOfPages();
 
@@ -221,10 +221,10 @@ function generatePDF() {
       for (let i = 1; i <= pageCount; i++) {
         pdf.setPage(i);
 
-        pdf.addImage("../Images/logo-gp-pereira 2.png", "PNG", 85, -4, 40, 40);
+        pdf.addImage("./Images/logo-gp-pereira 2.png", "PNG", 85, -4, 40, 40);
         
         pdf.addImage(
-          "../Images/footer.png",
+          "./Images/footer.png",
           "PNG", 
           0, 
           pageHeight - 20, 
