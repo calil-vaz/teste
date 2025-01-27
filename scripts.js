@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 13")
+console.log("teste 14")
 
 const requiredInputs = [
   document.getElementById("date"),
@@ -178,7 +178,7 @@ function generatePDF() {
                     </tr>
                     </thead>
             </table>           
-            <div style="margin-left: 26rem; margin-top: 2rem;" class="cardTemperatura">
+            <div style="margin-left: 26rem; margin-top: 3rem;" class="cardTemperatura">
               <p style="margin: 0;">1° SAÍDA DO DEPÓSITO - PAREDÃO ${requiredInputs[1].value.toUpperCase()}°C</p>
             </div>                   
             <div style="margin-left: 35rem; margin-top: 10.5rem;" class="cardTemperatura">
