@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 6")
+console.log("teste 7")
 
 const requiredInputs = [
   document.getElementById("date"),
@@ -92,6 +92,8 @@ function generatePDF() {
 
   valorPontoUm.innerHTML = `
      <div style="margin-left: 26rem; margin: 0; border: none" class="cardTemperatura">
+              _________
+              _________
               _________
               _________
             </div>  
