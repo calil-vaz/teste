@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 7")
+console.log("teste 8")
 
 const requiredInputs = [
   document.getElementById("date"),
@@ -98,7 +98,7 @@ function generatePDF() {
               _________
             </div>  
   `
-  // valorPontoUm.style.color = "white"
+  valorPontoUm.style.color = "white"
   
   content.innerHTML = `
             
