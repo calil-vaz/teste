@@ -4,7 +4,7 @@ var dataAquisicao = document.getElementById("dataAquisicao");
 var html = document.querySelector("html");
 var body = document.querySelector("body");
 
-console.log("teste 12")
+console.log("teste 13")
 
 const requiredInputs = [
   document.getElementById("date"),
@@ -203,7 +203,7 @@ function generatePDF() {
 
   html2pdf()
     .set({
-      margin: [25, 0, 15, 0], 
+      margin: [15, 0, 15, 0], 
       html2canvas: { scale: 2 },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       pagebreak: { mode: ["css", "legacy"] },
